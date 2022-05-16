@@ -1,0 +1,14 @@
+services:
+  dynamic-dns:
+    image: dynamic-dns
+    container_name: dynamic-dns
+    tty: true
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    environment:
+      - AUTH_EMAIL=xvicxpx@gmail.com
+      - AUTH_TOKEN=AanaKc40HTum8G9N4Gw-M5IB6MeabSCVPWN8jYKp
