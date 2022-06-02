@@ -7,6 +7,9 @@ This tool will automatically update cloudflare dns ip address with your current 
 - Develop in Docker enviornment
 - `docker compose up`
 
+## Cron Job
+- Update `root` file to update the cron job
+
 ## Production
 1. Building Image - `docker build --tag=cloudflare_dynamic:1.0 .`
     1. Remember to add the . add the end as that will build the whole folder
